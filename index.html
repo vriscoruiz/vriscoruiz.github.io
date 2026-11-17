@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261117a">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261117b">
   <script>
     (function () {
       var d = document.documentElement, t = null;
@@ -24,11 +24,9 @@
         t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
       }
       d.setAttribute('data-theme', t);
-      /* intro «descifrado»: solo la primera vez en cada visita */
-      var seen = false;
-      try { seen = sessionStorage.getItem('vrisco-intro') === '1'; } catch (e) {}
+      /* intro «descifrado»: en cada carga (no sale con «reducir movimiento») */
       var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-      d.className += (seen || calm) ? ' no-intro' : ' intro-on';
+      d.className += calm ? ' no-intro' : ' intro-on';
       setTimeout(function () { d.classList.remove('intro-on'); }, 6000);
     })();
   </script>
@@ -534,7 +532,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=20261117a"></script>
-  <script src="assets/js/main.js?v=20261117a"></script>
+  <script src="assets/js/i18n.js?v=20261117b"></script>
+  <script src="assets/js/main.js?v=20261117b"></script>
 </body>
 </html>

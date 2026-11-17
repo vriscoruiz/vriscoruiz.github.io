@@ -305,7 +305,6 @@
       done();
     }
     if (!sp || !root.classList.contains('intro-on')) { finish(); return; }
-    try { sessionStorage.setItem('vrisco-intro', '1'); } catch (e) {}
 
     var at = function (ms, f) { timers.push(setTimeout(f, ms)); };
     var code = $('#spCode'), st = $('#spSt');
