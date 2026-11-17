@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vrisco · Víctor Risco Ruiz, técnico en sistemas y redes</title>
+  <meta name="description" content="Portfolio de Víctor Risco Ruiz: técnico en Sistemas Microinformáticos y Redes (SMX), estudiante de ASIX y en prácticas en NTT DATA. Formación, experiencia, certificaciones Cisco y prácticas.">
+  <meta name="author" content="Víctor Risco Ruiz">
+  <meta name="theme-color" content="#0b0e13">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="vrisco · Víctor Risco Ruiz">
+  <meta property="og:description" content="Técnico en sistemas y redes · SMX · ASIX · Cisco CCST">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.className += ' js';
+      try { t = localStorage.getItem('vrisco-theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      d.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <!-- ================= BARRA SUPERIOR ================= -->
+  <header class="bar" id="bar">
+    <div class="bar-in wrap">
+      <a class="brand" href="#inicio" aria-label="vrisco">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect class="bm-box" x="1.5" y="1.5" width="29" height="29" rx="8"/>
+          <path class="bm-v" d="M8.5 10 13.5 22 18.5 10"/>
+          <rect class="bm-cur" x="20" y="19.5" width="5.5" height="2.8" rx="1"/>
+        </svg>
+        <span>vrisco</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+        <a href="#experiencia" data-i18n="nav.exp">Experiencia</a>
+        <a href="#formacion" data-i18n="nav.edu">Formación</a>
+        <a href="#certificaciones" data-i18n="nav.certs">Certificaciones</a>
+        <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#practicas" data-i18n="nav.labs">Prácticas</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="bar-tools">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" lang="es">ES</button>
+          <button type="button" data-lang="ca" lang="ca">CA</button>
+          <button type="button" data-lang="en" lang="en">EN</button>
+        </div>
+        <button type="button" class="icon-btn" id="themeBtn" data-i18n-aria="a.theme" aria-label="Cambiar entre tema claro y oscuro">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8 8 0 1 1 9.8 4a6.4 6.4 0 0 0 10.2 10.2Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" data-i18n-aria="a.menu" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <!-- ================= INICIO ================= -->
+    <section class="hero wrap" id="inicio">
+      <div class="hero-txt">
+        <p class="status"><span class="pulse" aria-hidden="true"></span><span data-i18n="hero.status">ASIX · 2º curso · en prácticas en NTT DATA</span></p>
+        <h1 class="hero-name">Víctor<br>Risco Ruiz<span class="dot">.</span></h1>
+        <p class="hero-role" data-i18n="hero.role">Técnico en sistemas y redes</p>
+        <p class="hero-lead" data-i18n="hero.lead">Monto, configuro y mantengo equipos, servidores y redes. Ahora me especializo en administración de sistemas y <strong>ciberseguridad</strong>.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#experiencia" data-i18n="hero.cta1">Ver trayectoria</a>
+          <a class="btn btn-ghost" href="#contacto" data-i18n="hero.cta2">Contactar</a>
+        </div>
+      </div>
+
+      <div class="term rv" role="img" data-i18n-aria="a.term" aria-label="Terminal con un resumen: SMX terminado, ASIX en curso, certificación CCST y CCNA en curso, prácticas en NTT DATA">
+        <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>vrisco@lab:~</span></div>
+        <pre class="term-body" id="term" aria-hidden="true"></pre>
+      </div>
+    </section>
+
+    <section class="stats wrap rv" aria-label="Datos">
+      <div class="stat"><b>2</b><span data-i18n="stats.cycles">ciclos formativos de informática</span></div>
+      <div class="stat"><b>2</b><span data-i18n="stats.intern">centros de prácticas</span></div>
+      <div class="stat"><b>3</b><span data-i18n="stats.certs">certificaciones, entre obtenidas y en curso</span></div>
+      <div class="stat"><b>3</b><span data-i18n="stats.langs">idiomas: catalán, castellano e inglés</span></div>
+    </section>
+
+    <!-- ================= 01 PERFIL ================= -->
+    <section class="sec wrap" id="perfil">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 01</span>
+        <h2 data-i18n="nav.profile">Perfil</h2>
+      </header>
+      <div class="profile">
+        <div class="profile-txt rv">
+          <p class="big" data-i18n="profile.big">De montar equipos en SMX a administrar sistemas y redes en ASIX, con la <em>ciberseguridad</em> como objetivo.</p>
+          <p data-i18n="profile.p1">Soy técnico en Sistemas Microinformáticos y Redes y estudio segundo de Administración de Sistemas Informáticos en Red en el Institut Carles Vallbona de Granollers. Desde junio de 2026 hago las prácticas en NTT DATA.</p>
+          <p data-i18n="profile.p2">Tengo la certificación Cisco CCST y estoy preparando el CCNA. Hice 4º de ESO en Irlanda, así que trabajo en inglés con soltura (Cambridge B2 First). Me gusta entender cómo funcionan las cosas por dentro, documentar lo que hago y seguir aprendiendo.</p>
+        </div>
+
+        <aside class="card file rv" aria-label="Ficha rápida">
+          <div class="file-bar"><span class="file-dot" aria-hidden="true"></span><span>perfil.yml</span></div>
+          <dl class="kv">
+            <div><dt data-i18n="kv.name">nombre</dt><dd>Víctor Risco Ruiz</dd></div>
+            <div><dt data-i18n="kv.loc">ubicación</dt><dd data-i18n="kv.locv">Vallès Oriental, Barcelona</dd></div>
+            <div><dt data-i18n="kv.role">rol</dt><dd data-i18n="kv.rolev">Técnico en prácticas · NTT DATA</dd></div>
+            <div><dt data-i18n="kv.edu">formación</dt><dd>SMX <span class="ok">✓</span> · ASIX <span class="wip" data-i18n="kv.second">2º</span></dd></div>
+            <div><dt data-i18n="kv.certs">certificaciones</dt><dd>CCST <span class="ok">✓</span> · B2 First <span class="ok">✓</span> · CCNA <span class="wip">…</span></dd></div>
+            <div><dt data-i18n="kv.langs">idiomas</dt><dd data-i18n="kv.langsv">catalán y castellano (nativo) · inglés (B2)</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= 02 EXPERIENCIA ================= -->
+    <section class="sec wrap" id="experiencia">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 02</span>
+        <h2 data-i18n="nav.exp">Experiencia</h2>
+        <p class="sec-sub" data-i18n="exp.sub">Prácticas de los dos ciclos formativos: en un centro educativo y en una consultora tecnológica internacional.</p>
+      </header>
+
+      <ol class="xp">
+        <li class="xp-item card rv">
+          <div class="xp-when">
+            <span class="badge badge-live" data-i18n="b.current">Actual</span>
+            <time datetime="2026-06">06/2026 — <span data-i18n="now">hoy</span></time>
+          </div>
+          <div class="xp-main">
+            <h3 data-i18n="exp.ntt.role">Técnico informático en prácticas</h3>
+            <p class="xp-org">NTT DATA <span class="sep">·</span> <span data-i18n="exp.ntt.type">Prácticas de ASIX</span></p>
+            <p data-i18n="exp.ntt.desc">Prácticas del Grado Superior en una de las mayores consultoras tecnológicas del mundo: trabajo en un entorno corporativo real, con sus procedimientos, sus herramientas y su equipo.</p>
+            <ul class="tags">
+              <li data-i18n="t.corp">Entorno corporativo</li>
+              <li data-i18n="t.team">Trabajo en equipo</li>
+              <li data-i18n="t.asixint">Prácticas ASIX</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="xp-item card rv">
+          <div class="xp-when">
+            <span class="badge badge-done" data-i18n="b.done">Finalizado</span>
+            <time datetime="2024-09">09/2024 — 06/2025</time>
+          </div>
+          <div class="xp-main">
+            <h3 data-i18n="exp.pia.role">Técnico informático en prácticas</h3>
+            <p class="xp-org">Escola Pia <span class="sep">·</span> <span data-i18n="exp.pia.type">Prácticas de SMX</span></p>
+            <p data-i18n="exp.pia.desc">Prácticas durante el segundo curso de SMX, dando soporte informático en un centro educativo: equipos, usuarios y red del día a día.</p>
+            <ul class="tags">
+              <li data-i18n="t.support">Soporte técnico</li>
+              <li data-i18n="t.hw">Hardware y software</li>
+              <li data-i18n="t.edu">Centro educativo</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= 03 FORMACIÓN ================= -->
+    <section class="sec wrap" id="formacion">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 03</span>
+        <h2 data-i18n="nav.edu">Formación</h2>
+        <p class="sec-sub" data-i18n="edu.sub">Dos ciclos de Formación Profesional de informática seguidos, y un año de instituto en Irlanda.</p>
+      </header>
+
+      <div class="edu">
+        <article class="card edu-item edu-main rv">
+          <div class="edu-top">
+            <time datetime="2025-09">09/2025 — <span data-i18n="now">hoy</span></time>
+            <span class="badge badge-wip" data-i18n="b.ongoing">En curso</span>
+          </div>
+          <h3>ASIX <span class="edu-spec" data-i18n="edu.asix.spec">· Ciberseguridad</span></h3>
+          <p class="edu-full" data-i18n="edu.asix.full">Grado Superior en Administración de Sistemas Informáticos en Red</p>
+          <p class="edu-where">Institut Carles Vallbona · Granollers</p>
+          <p data-i18n="edu.asix.desc">Segundo curso. Sistemas operativos, redes, servicios, bases de datos, seguridad y alta disponibilidad.</p>
+          <details class="mods">
+            <summary data-i18n="edu.mods">Módulos del ciclo</summary>
+            <ul class="mod-list" data-mods="asix"></ul>
+          </details>
+        </article>
+
+        <article class="card edu-item edu-main rv">
+          <div class="edu-top">
+            <time datetime="2023-09">09/2023 — 06/2025</time>
+            <span class="badge badge-done" data-i18n="b.done">Finalizado</span>
+          </div>
+          <h3>SMX</h3>
+          <p class="edu-full" data-i18n="edu.smx.full">Grado Medio en Sistemas Microinformáticos y Redes</p>
+          <p class="edu-where">Institut Carles Vallbona · Granollers</p>
+          <p data-i18n="edu.smx.desc">Montaje y mantenimiento de equipos, sistemas operativos, redes locales, servicios de red, seguridad y aplicaciones web.</p>
+          <details class="mods">
+            <summary data-i18n="edu.mods">Módulos del ciclo</summary>
+            <ul class="mod-list" data-mods="smx"></ul>
+          </details>
+        </article>
+
+        <article class="card edu-item rv">
+          <div class="edu-top">
+            <time datetime="2022-09">09/2022 — 06/2023</time>
+            <span class="badge badge-done" data-i18n="b.done">Finalizado</span>
+          </div>
+          <h3 data-i18n="edu.ie.title">4º de ESO · Irlanda</h3>
+          <p class="edu-where" data-i18n="edu.ie.where">Instituto en Irlanda</p>
+          <p data-i18n="edu.ie.desc">Último curso de la ESO en Irlanda, con todas las clases en inglés. De ahí viene mi nivel de inglés.</p>
+        </article>
+
+        <article class="card edu-item rv">
+          <div class="edu-top">
+            <time datetime="2019-09">09/2019 — 06/2022</time>
+            <span class="badge badge-done" data-i18n="b.done">Finalizado</span>
+          </div>
+          <h3 data-i18n="edu.eso.title">ESO · 1º a 3º</h3>
+          <p class="edu-where">Institut Til·ler · Les Franqueses del Vallès</p>
+          <p data-i18n="edu.eso.desc">Educación Secundaria Obligatoria.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 04 CERTIFICACIONES ================= -->
+    <section class="sec wrap" id="certificaciones">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 04</span>
+        <h2 data-i18n="nav.certs">Certificaciones</h2>
+      </header>
+
+      <div class="certs">
+        <article class="card cert rv">
+          <div class="cert-top"><span class="cert-issuer">Cisco</span><span class="badge badge-done" data-i18n="b.got">Obtenida</span></div>
+          <h3>CCST</h3>
+          <p class="cert-full">Cisco Certified Support Technician</p>
+          <p data-i18n="cert.ccst">Certificación de entrada de Cisco que acredita los conocimientos básicos para trabajar como técnico de soporte.</p>
+        </article>
+        <article class="card cert rv">
+          <div class="cert-top"><span class="cert-issuer">Cisco</span><span class="badge badge-wip" data-i18n="b.prep">En preparación</span></div>
+          <h3>CCNA</h3>
+          <p class="cert-full">Cisco Certified Network Associate</p>
+          <p data-i18n="cert.ccna">Fundamentos de redes, direccionamiento IP, switching, routing, seguridad y automatización.</p>
+        </article>
+        <article class="card cert rv">
+          <div class="cert-top"><span class="cert-issuer">Cambridge English</span><span class="badge badge-done" data-i18n="b.got">Obtenida</span></div>
+          <h3>B2 First</h3>
+          <p class="cert-full" data-i18n="cert.fce.full">Inglés · nivel B2 del MCER</p>
+          <p data-i18n="cert.fce">Certificado oficial de Cambridge que acredita un nivel de inglés intermedio alto, para estudiar y trabajar en inglés.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 05 LÍNEA DE TIEMPO ================= -->
+    <section class="sec wrap" id="linea">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 05</span>
+        <h2 data-i18n="tl.title">Línea de tiempo</h2>
+        <p class="sec-sub" data-i18n="tl.sub">De la ESO a ASIX, con las prácticas de cada ciclo.</p>
+      </header>
+
+      <div class="tl-scroll rv">
+        <div class="tl" id="timeline" data-start="2019-01" data-end="2028-01">
+          <div class="tl-row tl-axis"><span class="tl-lab"></span><div class="tl-track tl-ticks" aria-hidden="true"></div></div>
+          <div class="tl-row">
+            <span class="tl-lab" data-i18n="nav.edu">Formación</span>
+            <div class="tl-track">
+              <span class="tl-bar" data-from="2019-09" data-to="2022-06"><b data-i18n="tl.eso">ESO</b></span>
+              <span class="tl-bar" data-from="2022-09" data-to="2023-06"><b data-i18n="tl.ie">4º · IE</b></span>
+              <span class="tl-bar" data-from="2023-09" data-to="2025-06"><b>SMX</b></span>
+              <span class="tl-bar tl-plan" data-from="2025-09" data-to="2027-06"><b>ASIX</b></span>
+            </div>
+          </div>
+          <div class="tl-row">
+            <span class="tl-lab" data-i18n="nav.exp">Experiencia</span>
+            <div class="tl-track">
+              <span class="tl-bar tl-alt" data-from="2024-09" data-to="2025-06"><b>Escola Pia</b></span>
+              <span class="tl-bar tl-alt tl-live" data-from="2026-06" data-to="now"><b>NTT DATA</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="tl-legend rv">
+        <span><i class="lg lg-edu"></i><span data-i18n="nav.edu">Formación</span></span>
+        <span><i class="lg lg-xp"></i><span data-i18n="tl.lgxp">Prácticas</span></span>
+        <span><i class="lg lg-plan"></i><span data-i18n="tl.lgplan">Previsto</span></span>
+      </p>
+    </section>
+
+    <!-- ================= 06 HABILIDADES ================= -->
+    <section class="sec wrap" id="habilidades">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 06</span>
+        <h2 data-i18n="nav.skills">Habilidades</h2>
+        <p class="sec-sub" data-i18n="sk.sub">Lo que he aprendido y practicado en SMX y ASIX. Filtra por ciclo para ver qué viene de cada uno.</p>
+      </header>
+
+      <div class="areas">
+        <article class="card area rv">
+          <span class="area-n">01</span>
+          <h3 data-i18n="area.sys">Sistemas</h3>
+          <p data-i18n="area.sys.d">Instalación y administración de Windows, Windows Server y Linux, Active Directory, servicios y virtualización.</p>
+        </article>
+        <article class="card area rv">
+          <span class="area-n">02</span>
+          <h3 data-i18n="area.net">Redes</h3>
+          <p data-i18n="area.net.d">Redes locales de principio a fin: cableado, direccionamiento IPv4, subredes, VLAN y enrutamiento con equipos Cisco.</p>
+        </article>
+        <article class="card area rv">
+          <span class="area-n">03</span>
+          <h3 data-i18n="area.sec">Ciberseguridad</h3>
+          <p data-i18n="area.sec.d">Cortafuegos, VPN, seguridad de redes y alta disponibilidad: la especialización que estoy cursando en ASIX.</p>
+        </article>
+      </div>
+
+      <div class="skills rv" id="skills" data-filter="all">
+        <div class="filter" role="group" data-i18n-aria="a.filter" aria-label="Filtrar por ciclo">
+          <button type="button" data-f="all" aria-pressed="true" data-i18n="sk.all">Todo</button>
+          <button type="button" data-f="smx" aria-pressed="false">SMX</button>
+          <button type="button" data-f="asix" aria-pressed="false">ASIX</button>
+        </div>
+
+        <div class="sk-grid">
+          <div class="sk-group">
+            <h3 data-i18n="sk.os">Sistemas operativos</h3>
+            <ul class="tags">
+              <li data-c="smx asix">Windows</li>
+              <li data-c="smx asix">Windows Server</li>
+              <li data-c="smx asix">Linux</li>
+              <li data-c="smx">Ubuntu</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="area.net">Redes</h3>
+            <ul class="tags">
+              <li data-c="smx asix">TCP/IP</li>
+              <li data-c="smx asix" data-i18n="sk.ipv4">IPv4 y subredes</li>
+              <li data-c="smx asix">VLAN</li>
+              <li data-c="asix" data-i18n="sk.routing">Enrutamiento</li>
+              <li data-c="smx asix">Cisco Packet Tracer</li>
+              <li data-c="asix">Cisco IOS</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="sk.svc">Servicios</h3>
+            <ul class="tags">
+              <li data-c="smx">DNS</li>
+              <li data-c="smx">DHCP</li>
+              <li data-c="smx" data-i18n="sk.web">Servidores web</li>
+              <li data-c="smx" data-i18n="sk.mail">Servidor de correo</li>
+              <li data-c="smx">SSH</li>
+              <li data-c="smx asix">LDAP</li>
+              <li data-c="asix">Active Directory</li>
+              <li data-c="smx asix">LAMP</li>
+              <li data-c="smx asix">Linux Virtual Server</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="sk.sec">Seguridad</h3>
+            <ul class="tags">
+              <li data-c="smx asix" data-i18n="sk.netsec">Seguridad de redes</li>
+              <li data-c="smx asix" data-i18n="sk.fw">Cortafuegos</li>
+              <li data-c="smx">pfSense</li>
+              <li data-c="asix">OPNsense</li>
+              <li data-c="asix">VPN</li>
+              <li data-c="asix" data-i18n="sk.ha">Alta disponibilidad</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="sk.virt">Virtualización y hardware</h3>
+            <ul class="tags">
+              <li data-c="smx asix">VirtualBox</li>
+              <li data-c="asix">VMware</li>
+              <li data-c="smx asix" data-i18n="sk.vms">Máquinas virtuales</li>
+              <li data-c="smx asix" data-i18n="sk.hw">Montaje y reparación de equipos</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="sk.db">Bases de datos</h3>
+            <ul class="tags">
+              <li data-c="asix">SQL</li>
+              <li data-c="asix">MariaDB</li>
+              <li data-c="asix">PostgreSQL</li>
+              <li data-c="asix">MongoDB</li>
+              <li data-c="asix">DBeaver</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="sk.code">Scripting y web</h3>
+            <ul class="tags">
+              <li data-c="smx asix">Bash</li>
+              <li data-c="smx asix">PowerShell</li>
+              <li data-c="smx">Python</li>
+              <li data-c="smx asix">HTML</li>
+              <li data-c="asix">CSS</li>
+              <li data-c="asix">JavaScript</li>
+              <li data-c="asix">JSON</li>
+              <li data-c="smx">PHP</li>
+              <li data-c="smx">WordPress</li>
+              <li data-c="smx">Moodle</li>
+            </ul>
+          </div>
+          <div class="sk-group">
+            <h3 data-i18n="sk.soft">Idiomas y forma de trabajar</h3>
+            <ul class="tags">
+              <li data-c="all" data-i18n="sk.ca">Catalán · nativo</li>
+              <li data-c="all" data-i18n="sk.es">Castellano · nativo</li>
+              <li data-c="all" data-i18n="sk.en">Inglés · B2</li>
+              <li data-c="all" data-i18n="sk.docs">Documentación técnica</li>
+              <li data-c="all" data-i18n="t.team">Trabajo en equipo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 PROYECTOS ================= -->
+    <section class="sec wrap" id="proyectos">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 07</span>
+        <h2 data-i18n="nav.projects">Proyectos</h2>
+        <p class="sec-sub" data-i18n="proj.sub">Aquí irán los proyectos que haga por mi cuenta: laboratorios, scripts, servidores y webs.</p>
+      </header>
+
+      <div class="proj-grid">
+        <!--
+          PLANTILLA DE PROYECTO
+          Para añadir un proyecto, copia este bloque, quítale los comentarios
+          y bórralo de los huecos "En preparación" de abajo.
+
+        <article class="card proj rv">
+          <div class="proj-top"><span class="proj-num">01</span><span class="badge badge-done">Publicado</span></div>
+          <h3>Nombre del proyecto</h3>
+          <p>Qué es, para qué sirve y qué has aprendido haciéndolo.</p>
+          <ul class="tags"><li>Linux</li><li>Bash</li></ul>
+          <a class="link" href="https://github.com/victor-risco-ruiz/..." target="_blank" rel="noopener">Ver en GitHub ↗</a>
+        </article>
+        -->
+
+        <article class="card proj proj-empty rv">
+          <div class="proj-top"><span class="proj-num">01</span><span class="badge badge-wip" data-i18n="proj.soon">En preparación</span></div>
+          <h3 data-i18n="proj.next">Próximamente</h3>
+          <p data-i18n="proj.empty">Estoy preparando mis primeros proyectos propios. Pronto los verás aquí.</p>
+        </article>
+        <article class="card proj proj-empty rv" aria-hidden="true">
+          <div class="proj-top"><span class="proj-num">02</span></div>
+          <div class="ghost-lines"><i></i><i></i><i></i></div>
+        </article>
+        <article class="card proj proj-empty rv" aria-hidden="true">
+          <div class="proj-top"><span class="proj-num">03</span></div>
+          <div class="ghost-lines"><i></i><i></i><i></i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 08 PRÁCTICAS ================= -->
+    <section class="sec wrap" id="practicas">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 08</span>
+        <h2 data-i18n="labs.title">Portfolio de prácticas</h2>
+        <p class="sec-sub" data-i18n="labs.sub">Las prácticas de clase de cada ciclo, ordenadas por módulos en mi repositorio de GitHub.</p>
+      </header>
+
+      <div class="labs">
+        <a class="card lab rv" href="https://github.com/victor-risco-ruiz/vrisco/tree/main/ASIX" target="_blank" rel="noopener">
+          <div class="lab-top"><span class="badge badge-wip" data-i18n="b.ongoing">En curso</span><span class="lab-path">/ASIX</span></div>
+          <h3>ASIX</h3>
+          <p data-i18n="labs.asix">Sistemas operativos, redes, bases de datos, servicios y seguridad. Las de segundo curso se van añadiendo.</p>
+          <span class="link" data-i18n="labs.see">Ver en GitHub ↗</span>
+        </a>
+        <a class="card lab rv" href="https://github.com/victor-risco-ruiz/vrisco/tree/main/SMX" target="_blank" rel="noopener">
+          <div class="lab-top"><span class="badge badge-done" data-i18n="b.full">Completo</span><span class="lab-path">/SMX</span></div>
+          <h3>SMX</h3>
+          <p data-i18n="labs.smx">Equipos, sistemas operativos, redes, servicios y web: primer y segundo curso, con el proyecto de síntesis.</p>
+          <span class="link" data-i18n="labs.see">Ver en GitHub ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= 09 CONTACTO ================= -->
+    <section class="sec wrap contact" id="contacto">
+      <header class="sec-head rv">
+        <span class="sec-tag">// 09</span>
+        <h2 data-i18n="nav.contact">Contacto</h2>
+      </header>
+      <div class="contact-box card rv">
+        <p class="contact-big" data-i18n="ct.big">¿Hablamos<span class="dot">?</span></p>
+        <p data-i18n="ct.p">Si buscas un técnico de sistemas y redes con ganas de aprender, escríbeme y te respondo.</p>
+        <div class="mail-row">
+          <a class="mail" id="mail" href="#contacto" data-u="victor.risco2007" data-d="gmail.com">victor.risco2007 [at] gmail.com</a>
+          <button type="button" class="btn btn-ghost btn-sm" id="copyMail" data-i18n="ct.copy">Copiar</button>
+          <span class="copied" id="copied" role="status" aria-live="polite"></span>
+        </div>
+        <div class="socials">
+          <a class="btn btn-solid" href="https://www.linkedin.com/in/v%C3%ADctor-risco-ruiz-b4772a3b3/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/victor-risco-ruiz" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-in wrap">
+      <span class="brand brand-sm">vrisco</span>
+      <span>© <span id="year">2026</span> Víctor Risco Ruiz</span>
+      <span class="foot-note" data-i18n="ft.note">Hecho a mano con HTML, CSS y JavaScript · Publicado en GitHub Pages</span>
+      <a href="#inicio" class="to-top" data-i18n="ft.top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
