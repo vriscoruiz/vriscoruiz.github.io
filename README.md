@@ -40,6 +40,8 @@ vriscoruiz.github.io/
 - **Añadir un proyecto:** en la sección `07 PROYECTOS` de `index.html` hay una plantilla comentada; cópiala y rellénala.
 - **Añadir prácticas:** súbelas a la carpeta del módulo (`SMX/MP05-Redes-locales/…`) y añade una fila a la tabla de su `README.md`.
 
+- **Después de cambiar CSS o JS:** sube el número `?v=` de las líneas de `styles.css`, `i18n.js` y `main.js` en `index.html`, para que los navegadores no usen la versión antigua guardada.
+
 Es HTML, CSS y JavaScript sin dependencias ni compilación: para verla en local basta con abrir `index.html` en el navegador.
 
 ## Publicar en GitHub Pages
