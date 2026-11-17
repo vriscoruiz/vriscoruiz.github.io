@@ -288,6 +288,65 @@
     if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
   }, { passive: true });
 
+  /* ---------- Intro «descifrado» ---------- */
+  function runIntro(done) {
+    var sp = $('#splash');
+    var finished = false, timers = [];
+    function finish() {
+      if (finished) return;
+      finished = true;
+      timers.forEach(clearTimeout);
+      if (sp) {
+        sp.removeEventListener('click', skip);
+        if (sp.parentNode) sp.parentNode.removeChild(sp);
+      }
+      document.removeEventListener('keydown', skip);
+      root.classList.remove('intro-on');
+      done();
+    }
+    if (!sp || !root.classList.contains('intro-on')) { finish(); return; }
+    try { sessionStorage.setItem('vrisco-intro', '1'); } catch (e) {}
+
+    var at = function (ms, f) { timers.push(setTimeout(f, ms)); };
+    var code = $('#spCode'), st = $('#spSt');
+    st.textContent = t('decrypting');
+    var touch = window.matchMedia && matchMedia('(hover: none)').matches;
+    $('#spSkip').textContent = t(touch ? 'skipTap' : 'skipIntro');
+
+    var target = 'VÍCTOR RISCO RUIZ';
+    var pool = '!<>-_/[]{}=+*^?#01ABCDEFGHJKLMNPQRSTUVWXYZ';
+    var reveal = target.split('').map(function (_, i) { return 250 + i * 55 + Math.random() * 220; });
+    var t0 = Date.now();
+    (function frame() {
+      var e = Date.now() - t0, html = '', all = true;
+      for (var i = 0; i < target.length; i++) {
+        var ch = target[i];
+        if (ch === ' ') { html += ' '; continue; }
+        if (e >= reveal[i]) html += ch;
+        else { all = false; html += '<span class="s">' + pool[(Math.random() * pool.length) | 0] + '</span>'; }
+      }
+      code.innerHTML = html;
+      if (!all) at(45, frame);
+      else { st.textContent = t('granted'); st.classList.add('ok'); }
+    })();
+
+    function open(delay) {
+      at(delay, function () { sp.classList.add('fade'); });
+      at(delay + 150, function () { sp.classList.add('out'); root.classList.remove('intro-on'); });
+      at(delay + 900, finish);
+    }
+    open(1950);
+
+    function skip() {               // clic, toque o tecla: abrir ya
+      timers.forEach(clearTimeout); timers = [];
+      open(0);
+      sp.removeEventListener('click', skip);
+      document.removeEventListener('keydown', skip);
+    }
+    sp.addEventListener('click', skip);
+    document.addEventListener('keydown', skip);
+  }
+
   /* ---------- Inicio ---------- */
   var y = $('#year');
   if (y) y.textContent = new Date().getFullYear();
@@ -296,6 +355,6 @@
   var saved = store('vrisco-lang');
   var guess = (navigator.language || 'es').slice(0, 2).toLowerCase();
   setLang(saved || (LANGS.indexOf(guess) >= 0 ? guess : 'es'), { initial: true });
-  startTerminal(false);
+  runIntro(function () { startTerminal(false); });
   onScroll();
 })();

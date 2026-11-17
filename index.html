@@ -24,10 +24,27 @@
         t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
       }
       d.setAttribute('data-theme', t);
+      /* intro «descifrado»: solo la primera vez en cada visita */
+      var seen = false;
+      try { seen = sessionStorage.getItem('vrisco-intro') === '1'; } catch (e) {}
+      var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      d.className += (seen || calm) ? ' no-intro' : ' intro-on';
+      setTimeout(function () { d.classList.remove('intro-on'); }, 6000);
     })();
   </script>
 </head>
 <body>
+  <!-- ================= INTRO (descifrado) ================= -->
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="sp-half sp-t"></div>
+    <div class="sp-half sp-b"></div>
+    <div class="sp-c">
+      <div class="sp-code" id="spCode"></div>
+      <div class="sp-st" id="spSt">&gt; descifrando…</div>
+    </div>
+    <div class="sp-skip" id="spSkip">clic para saltar</div>
+  </div>
+
   <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <!-- ================= BARRA SUPERIOR ================= -->
