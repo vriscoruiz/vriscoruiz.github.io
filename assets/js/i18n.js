@@ -282,11 +282,11 @@ window.VRISCO.I18N = {
 /* Textos que solo usa el JavaScript (los tres idiomas). */
 window.VRISCO.JS_TEXT = {
   es: { copied: 'Copiado ✓', today: 'hoy', menuOpen: 'Abrir menú', menuClose: 'Cerrar menú',
-        title: 'vrisco' },
+        title: 'Víctor Risco Ruiz · Portfolio' },
   ca: { copied: 'Copiat ✓', today: 'avui', menuOpen: 'Obrir el menú', menuClose: 'Tancar el menú',
-        title: 'vrisco' },
+        title: 'Víctor Risco Ruiz · Portfolio' },
   en: { copied: 'Copied ✓', today: 'now', menuOpen: 'Open menu', menuClose: 'Close menu',
-        title: 'vrisco' }
+        title: 'Víctor Risco Ruiz · Portfolio' }
 };
 
 /* Líneas de la terminal de la portada.
