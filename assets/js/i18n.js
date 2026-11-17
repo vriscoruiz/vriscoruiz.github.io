@@ -7,7 +7,7 @@
    ========================================================== */
 window.VRISCO = window.VRISCO || {};
 
-window.VRISCO.REPO = 'https://github.com/victor-risco-ruiz/victor-risco-ruiz.github.io';
+window.VRISCO.REPO = 'https://github.com/vriscoruiz/vriscoruiz.github.io';
 
 window.VRISCO.I18N = {
   ca: {

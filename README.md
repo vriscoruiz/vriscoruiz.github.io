@@ -2,7 +2,7 @@
 
 Portfolio personal de **Víctor Risco Ruiz**, técnico en sistemas y redes.
 
-🌐 **Web:** https://victor-risco-ruiz.github.io/
+🌐 **Web:** https://vriscoruiz.github.io/
 
 | | |
 |---|---|
@@ -15,7 +15,7 @@ Portfolio personal de **Víctor Risco Ruiz**, técnico en sistemas y redes.
 ## Contenido del repositorio
 
 ```
-victor-risco-ruiz.github.io/
+vriscoruiz.github.io/
 ├── index.html          ← la web (una sola página)
 ├── 404.html
 ├── assets/
@@ -48,4 +48,4 @@ Es HTML, CSS y JavaScript sin dependencias ni compilación: para verla en local 
 
 ---
 
-[LinkedIn](https://www.linkedin.com/in/v%C3%ADctor-risco-ruiz-b4772a3b3/) · [GitHub](https://github.com/victor-risco-ruiz)
+[LinkedIn](https://www.linkedin.com/in/v%C3%ADctor-risco-ruiz-b4772a3b3/) · [GitHub](https://github.com/vriscoruiz)
