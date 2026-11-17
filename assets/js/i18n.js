@@ -42,7 +42,7 @@ window.VRISCO.I18N = {
 
     'kv.name': 'nom',
     'kv.loc': 'ubicació',
-    'kv.locv': 'Vallès Oriental, Barcelona',
+    'kv.locv': 'Les Franqueses del Vallès, Barcelona',
     'kv.role': 'rol',
     'kv.rolev': 'Tècnic en pràctiques · NTT DATA',
     'kv.edu': 'formació',
@@ -84,7 +84,7 @@ window.VRISCO.I18N = {
 
     'b.got': 'Obtinguda',
     'b.prep': 'En preparació',
-    'cert.ccst': 'Certificació d’entrada de Cisco que acredita els coneixements bàsics per treballar com a tècnic de suport.',
+    'cert.ccst': 'Certificació de Cisco en fonaments de xarxes: models i protocols, adreçament IP, cablejat, dispositius i resolució d’incidències.',
     'cert.ccna': 'Fonaments de xarxes, adreçament IP, switching, routing, seguretat i automatització.',
     'cert.fce.full': 'Anglès · nivell B2 del MECR',
     'cert.fce': 'Certificat oficial de Cambridge que acredita un nivell d’anglès intermedi alt, per estudiar i treballar en anglès.',
@@ -176,7 +176,7 @@ window.VRISCO.I18N = {
 
     'kv.name': 'name',
     'kv.loc': 'location',
-    'kv.locv': 'Vallès Oriental, Barcelona (Spain)',
+    'kv.locv': 'Les Franqueses del Vallès, Barcelona (Spain)',
     'kv.role': 'role',
     'kv.rolev': 'IT intern · NTT DATA',
     'kv.edu': 'education',
@@ -218,7 +218,7 @@ window.VRISCO.I18N = {
 
     'b.got': 'Earned',
     'b.prep': 'Preparing',
-    'cert.ccst': 'Cisco’s entry-level certification, validating the core knowledge needed to work as a support technician.',
+    'cert.ccst': 'Cisco certification in networking fundamentals: models and protocols, IP addressing, cabling, devices and troubleshooting.',
     'cert.ccna': 'Networking fundamentals, IP addressing, switching, routing, security and automation.',
     'cert.fce.full': 'English · CEFR level B2',
     'cert.fce': 'Official Cambridge certificate for upper-intermediate English, enough to study and work in English.',
