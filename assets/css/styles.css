@@ -532,6 +532,12 @@ strong { font-weight: 600; color: var(--ink); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .rv { opacity: 1; transform: none; }
+  /* la intro se muestra igual aunque el sistema tenga las animaciones desactivadas */
+  .js .splash { animation: sp-safety 0s 6s forwards !important; }
+  .sp-half { transition: transform .7s cubic-bezier(.77, 0, .18, 1) !important; }
+  .sp-c { transition: opacity .2s !important; }
+  .sp-skip { animation: sp-in .4s .8s forwards !important; }
+  .splash.fade .sp-skip { animation: none !important; }
 }
 
 /* ---------- Responsive ---------- */
