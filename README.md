@@ -1,4 +1,4 @@
-# vrisco · Víctor Risco Ruiz
+# Víctor Risco Ruiz · Portfolio
 
 Portfolio personal de **Víctor Risco Ruiz**, técnico en sistemas y redes.
 
