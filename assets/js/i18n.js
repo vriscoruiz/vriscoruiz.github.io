@@ -33,7 +33,7 @@ window.VRISCO.I18N = {
 
     'stats.cycles': 'cicles formatius d’informàtica',
     'stats.intern': 'centres de pràctiques',
-    'stats.certs': 'certificacions, entre obtingudes i en curs',
+    'stats.certs': 'insígnies de Cisco verificades a Credly',
     'stats.langs': 'idiomes: català, castellà i anglès',
 
     'profile.big': 'De muntar equips a SMX a administrar sistemes i xarxes a ASIX, amb la <em>ciberseguretat</em> com a objectiu.',
@@ -50,6 +50,12 @@ window.VRISCO.I18N = {
     'kv.certs': 'certificacions',
     'kv.langs': 'idiomes',
     'kv.langsv': 'català i castellà (natiu) · anglès (B2)',
+    'kv.drive': 'carnet',
+    'kv.drivev': 'cotxe i moto',
+    'cert.verify': 'Verificar a Credly ↗',
+    'cert.ccna.prog': '1 de 3 cursos de Cisco completat',
+    'cert.badges': 'Insígnies de Cisco Networking Academy',
+    'cert.badges.sub': 'Totes verificables a Credly: prem-ne una per veure la insígnia oficial.',
 
     'exp.sub': 'Pràctiques dels dos cicles formatius: en un centre educatiu i en una consultora tecnològica internacional.',
     'b.current': 'Actual',
@@ -167,7 +173,7 @@ window.VRISCO.I18N = {
 
     'stats.cycles': 'IT vocational qualifications',
     'stats.intern': 'internships',
-    'stats.certs': 'certifications, earned or in progress',
+    'stats.certs': 'Cisco badges verified on Credly',
     'stats.langs': 'languages: Catalan, Spanish and English',
 
     'profile.big': 'From building PCs in SMX to running systems and networks in ASIX, with <em>cybersecurity</em> as the goal.',
@@ -184,6 +190,12 @@ window.VRISCO.I18N = {
     'kv.certs': 'certifications',
     'kv.langs': 'languages',
     'kv.langsv': 'Catalan & Spanish (native) · English (B2)',
+    'kv.drive': 'driving licence',
+    'kv.drivev': 'car & motorcycle',
+    'cert.verify': 'Verify on Credly ↗',
+    'cert.ccna.prog': '1 of 3 Cisco courses completed',
+    'cert.badges': 'Cisco Networking Academy badges',
+    'cert.badges.sub': 'All verifiable on Credly: click one to see the official badge.',
 
     'exp.sub': 'Internships from both vocational courses: at a school and at a global technology consultancy.',
     'b.current': 'Current',

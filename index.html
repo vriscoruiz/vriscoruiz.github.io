@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261117c">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261118a">
   <script>
     (function () {
       var d = document.documentElement, t = null;
@@ -108,7 +108,7 @@
     <section class="stats wrap rv" aria-label="Datos">
       <div class="stat"><b>2</b><span data-i18n="stats.cycles">ciclos formativos de informática</span></div>
       <div class="stat"><b>2</b><span data-i18n="stats.intern">centros de prácticas</span></div>
-      <div class="stat"><b>3</b><span data-i18n="stats.certs">certificaciones, entre obtenidas y en curso</span></div>
+      <div class="stat"><b>8</b><span data-i18n="stats.certs">insignias de Cisco verificadas en Credly</span></div>
       <div class="stat"><b>3</b><span data-i18n="stats.langs">idiomas: catalán, castellano e inglés</span></div>
     </section>
 
@@ -134,6 +134,7 @@
             <div><dt data-i18n="kv.edu">formación</dt><dd>SMX <span class="ok">✓</span> · ASIX <span class="wip" data-i18n="kv.second">2º</span></dd></div>
             <div><dt data-i18n="kv.certs">certificaciones</dt><dd>CCST <span class="ok">✓</span> · B2 First <span class="ok">✓</span> · CCNA <span class="wip">…</span></dd></div>
             <div><dt data-i18n="kv.langs">idiomas</dt><dd data-i18n="kv.langsv">catalán y castellano (nativo) · inglés (B2)</dd></div>
+            <div><dt data-i18n="kv.drive">carnet</dt><dd data-i18n="kv.drivev">coche y moto</dd></div>
           </dl>
         </aside>
       </div>
@@ -258,12 +259,21 @@
           <h3>CCST</h3>
           <p class="cert-full">Cisco Certified Support Technician · Networking</p>
           <p data-i18n="cert.ccst">Certificación de Cisco en fundamentos de redes: modelos y protocolos, direccionamiento IP, cableado, dispositivos y resolución de incidencias.</p>
+          <a class="link cert-link" href="https://www.credly.com/badges/5fb61f94-89ad-484c-9db9-b10f27ac8542/public_url" target="_blank" rel="noopener" data-i18n="cert.verify">Verificar en Credly ↗</a>
         </article>
         <article class="card cert rv">
           <div class="cert-top"><span class="cert-issuer">Cisco</span><span class="badge badge-wip" data-i18n="b.prep">En preparación</span></div>
           <h3>CCNA</h3>
           <p class="cert-full">Cisco Certified Network Associate</p>
           <p data-i18n="cert.ccna">Fundamentos de redes, direccionamiento IP, switching, routing, seguridad y automatización.</p>
+          <div class="ccna">
+            <ol class="ccna-steps">
+              <li class="done" title="Introduction to Networks"><span>ITN</span><i>✓</i></li>
+              <li title="Switching, Routing, and Wireless Essentials"><span>SRWE</span></li>
+              <li title="Enterprise Networking, Security, and Automation"><span>ENSA</span></li>
+            </ol>
+            <p class="ccna-note" data-i18n="cert.ccna.prog">1 de 3 cursos de Cisco completado</p>
+          </div>
         </article>
         <article class="card cert rv">
           <div class="cert-top"><span class="cert-issuer">Cambridge English</span><span class="badge badge-done" data-i18n="b.got">Obtenida</span></div>
@@ -271,6 +281,39 @@
           <p class="cert-full" data-i18n="cert.fce.full">Inglés · nivel B2 del MCER</p>
           <p data-i18n="cert.fce">Certificado oficial de Cambridge que acredita un nivel de inglés intermedio alto, para estudiar y trabajar en inglés.</p>
         </article>
+      </div>
+
+      <div class="bdgs rv">
+        <div class="bdgs-head">
+          <h3 data-i18n="cert.badges">Insignias de Cisco Networking Academy</h3>
+          <p data-i18n="cert.badges.sub">Todas verificables en Credly: pulsa una para ver la insignia oficial.</p>
+        </div>
+        <ul class="bdg-grid">
+          <li><a class="bdg" href="https://www.credly.com/badges/5fb61f94-89ad-484c-9db9-b10f27ac8542/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/ccst-networking.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">CCST Networking</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/46ba29f2-31fd-4dc6-a2b9-67c401bfe5bc/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/ccna-itn.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">CCNA: Introduction to Networks</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/d0edde5f-a4d1-40cf-82bc-6a4c3dcab819/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/network-technician-career-path.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">Network Technician Career Path</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/a36ae850-f8fd-4701-b2d9-27492707b53c/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/networking-basics.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">Networking Basics</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/eea22779-2d81-44b2-b75b-23b14ace8001/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/networking-devices-initial-configuration.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">Networking Devices and Initial Configuration</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/cf83f7be-e292-47d8-871b-b68516f49be4/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/network-addressing-basic-troubleshooting.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">Network Addressing and Basic Troubleshooting</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/8baa24fd-86e5-487f-8d83-ce6f325eb749/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/network-support-security.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">Network Support and Security</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+          <li><a class="bdg" href="https://www.credly.com/badges/8f64b095-9f70-419e-a057-8e1d66f1781b/public_url" target="_blank" rel="noopener">
+            <img src="assets/img/badges/learn-a-thon-2026.png" alt="" width="88" height="88" loading="lazy">
+            <span class="bdg-name">Networking Academy Learn-A-Thon 2026</span><span class="bdg-meta">Cisco · Credly ↗</span></a></li>
+        </ul>
       </div>
     </section>
 
@@ -532,7 +575,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=20261117c"></script>
-  <script src="assets/js/main.js?v=20261117c"></script>
+  <script src="assets/js/i18n.js?v=20261118a"></script>
+  <script src="assets/js/main.js?v=20261118a"></script>
 </body>
 </html>

@@ -9,7 +9,8 @@ Portfolio personal de **Víctor Risco Ruiz**, técnico en sistemas y redes.
 | 🎓 **SMX** | Grado Medio en Sistemas Microinformáticos y Redes · Institut Carles Vallbona · *Finalizado* |
 | 🎓 **ASIX** | Grado Superior en Administración de Sistemas Informáticos en Red · Institut Carles Vallbona · *2º curso* |
 | 💼 **Prácticas** | NTT DATA (ASIX, desde 06/2026) · Escola Pia Granollers (SMX, 2024–2025) |
-| 📜 **Certificaciones** | Cisco CCST Networking · Cambridge B2 First · Cisco CCNA *(en preparación)* |
+| 📜 **Certificaciones** | Cisco CCST Networking · Cambridge B2 First · Cisco CCNA *(en preparación, ITN completado)* · 8 insignias de Cisco en [Credly](https://www.credly.com/badges/5fb61f94-89ad-484c-9db9-b10f27ac8542/public_url) |
+| 🚗 **Carnet** | Coche y moto |
 | 🗣️ **Idiomas** | Catalán y castellano (nativo) · Inglés (B2) |
 
 ## Contenido del repositorio
